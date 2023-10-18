@@ -10,12 +10,17 @@ https://github.com/jasonsilberman/nextgram13-root-path/assets/1936396/3a2817b9-4
 ## Not working with `/:id` pages
 https://github.com/jasonsilberman/nextgram13-root-path/assets/1936396/e49f7baa-8240-40ec-b371-66dfcfe1d94a
 
+## Other reports of this behavior
+I found some other reports of this buggy behavior below:
+
+- Reddit thread: [Root level dynamic routes with intercepting routes](https://www.reddit.com/r/nextjs/comments/13xq8wh/root_level_dynamic_routes_with_intercepting_routes/)
+
 # Try it Yourself
 I have also gone through and deployed this app to Vercel and updated the below instructions for this repo so you can see the issues for yourself.
 
 ## Demo
 
-https://nextgram.vercel.app
+[https://nextgram.vercel.app](https://nextgram13-root-path.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjasonsilberman%2Fnextgram13-root-path)
 
