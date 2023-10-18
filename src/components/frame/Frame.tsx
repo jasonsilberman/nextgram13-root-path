@@ -1,7 +1,8 @@
-import Image from 'next/image'
-import { Photo } from '../../photos'
+import Image from "next/image";
+import { Photo } from "../../photos";
 
 export default function Frame({ photo }: { photo: Photo }) {
+  if (!photo) return null;
   return (
     <>
       <Image
@@ -17,5 +18,5 @@ export default function Frame({ photo }: { photo: Photo }) {
         <p>Taken by {photo.username}</p>
       </div>
     </>
-  )
+  );
 }
