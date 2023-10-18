@@ -4,6 +4,20 @@ This is a fork of the NextGram app built as a demo for Instagram style routes in
 
 The original has a `/` root page that shows the grid of photos and then individual `/photos/:id` pages. However, for my use case, I would like to have the individual pages be at `/:id` without the `/photos` route segment. This is not currently possible as of Next.js 13.5.5. I have recorded two videos below showing the correct and incorrect behavior (you can see the URL changes in the Arc browser below).
 
+```
+├── app
+|  ├── @modal
+|  |  ├── (.)
+|  |  |  └── [id]
+|  |  |     └── page.tsx
+|  |  └── default.tsx
+|  ├── [id]
+|  |  └── page.tsx
+|  ├── default.tsx
+|  ├── layout.tsx
+|  └── page.tsx
+```
+
 ## Working with `/photos/:id` pages
 https://github.com/jasonsilberman/nextgram13-root-path/assets/1936396/3a2817b9-4730-4c93-9634-bb4b7ac2cf6e
 
@@ -13,6 +27,7 @@ https://github.com/jasonsilberman/nextgram13-root-path/assets/1936396/e49f7baa-8
 ## Other reports of this behavior
 I found some other reports of this buggy behavior below:
 
+- Next.js issue [#52533 Intercepting parallel routes including dynamic route not working within the same directory](https://github.com/vercel/next.js/issues/52533)
 - Reddit thread: [Root level dynamic routes with intercepting routes](https://www.reddit.com/r/nextjs/comments/13xq8wh/root_level_dynamic_routes_with_intercepting_routes/)
 
 # Try it Yourself
